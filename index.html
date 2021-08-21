@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacunas</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center">Vacuna COVID-19</h1>
+          <p id="description" class="description text-center">
+            En esta encuesta agradecemos nos comparta su informacion referente a su vacunacion contra el COVID-19.
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Nombre</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Ingrese su nombre y apellido"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Correo</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Ingrese su correo"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Telefono</label
+            >
+            <input
+              type="number"
+              name="Telefono"
+              id="number"
+              class="form-control"
+              placeholder="Telefono"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <p>¿Que vacuna le fue suministrada?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Seleccione una opcion</option>
+              <option value="cuenta">Pfizer</option>
+              <option value="tarjetas">Moderna</option>
+              <option value="credito">Sputnik V</option>
+              <option value="hipoteca">Janssen</option>
+              <option value="Carro">Curevac</option>
+            </select>
+          </div>
+
+      
+          <div class="form-group">
+            <p>
+              ¿Que Dosis le fue suministrada?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Seleccione una opción</option>
+              <option value="1">Primera Dosis</option>
+              <option value="2">Segunda Dosis</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>
+              ¿Presento algun sintoma secundario?
+            </p>
+      
+            <label
+              ><input
+                name="prefer"
+                value="Fiebre"
+                type="checkbox"
+                class="input-checkbox"
+              />Fiebre</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="Dolor"
+                type="checkbox"
+                class="input-checkbox"
+              />Dolor en la zona de la vacuna</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="dolor muscular"
+                type="checkbox"
+                class="input-checkbox"
+              />Dolor muscular</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Cansancio"
+                type="checkbox"
+                class="input-checkbox"
+              />Cansancio</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="dolor de cabeza"
+                type="checkbox"
+                class="input-checkbox"
+              />Dolor de cabeza</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="escalofrio"
+                type="checkbox"
+                class="input-checkbox"
+              />Escalofrios</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="nauseas"
+                type="checkbox"
+                class="input-checkbox"
+              />Nauseas</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>¿Desea dejarnos su opinion sobre la vacuna contra el COVID-19?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Ingrese su opinion aqui."
+            ></textarea>
+          </div>
+          <button class="btn btn-danger btn-sm" id="registrar encuesta" onclick="alert('Gracias por su tiempo')" value="ENVIAR">
+            ENVIAR
+          </button>
+          
+          </div>
+        </form>
+      </div>   
+</body>
+</html>
